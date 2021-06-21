@@ -61,6 +61,11 @@ const sortByYears = inventors.sort((a, b) => {
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
+const blvdList = ["Boulevard Auguste-Blanqui", "Boulevard Barbès", "Boulevard Beaumarchais", "Boulevard de l'Amiral-Bruix"];
+
+const filteredBlvdList = blvdList.filter((blvd) => {
+  return blvd.includes('de');
+});
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
