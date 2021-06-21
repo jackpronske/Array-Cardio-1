@@ -45,6 +45,11 @@ const sortedInventors = inventors.sort((a, b) => {
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
 
+const yearsLived = inventors.reduce((acc, cur) => {
+  let inventorAge = cur.passed - cur.year;
+  return acc + inventorAge;
+}, 0);
+
 // 5. Sort the inventors by years lived
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
