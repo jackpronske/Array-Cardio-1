@@ -70,7 +70,20 @@ const filteredBlvdList = blvdList.filter((blvd) => {
 // 7. sort Exercise
 // Sort the people alphabetically by last name
 
+const sortedPeople = people.sort();
+
+console.log(sortedPeople);
+
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+const reducedData = data.reduce((acc, cur) => {
+  if (!acc[cur]) {
+    acc[cur] = 1;
+  } else {
+    acc[cur]++
+  }
+  return acc
+}, {});
 
