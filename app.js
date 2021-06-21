@@ -38,6 +38,10 @@ const inventorNames = inventors.map((inventor) => {
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
 
+const sortedInventors = inventors.sort((a, b) => {
+  return a.year - b.year
+});
+
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
 
